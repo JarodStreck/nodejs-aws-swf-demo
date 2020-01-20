@@ -1,50 +1,34 @@
 # aws-swf-demo
 Amazon Simple Workflow Service Demo Application in Node.js
 
-The demo application aims to demonstrate the data exchange and interaction among SWF actors (workflow starter, decider, and activity workers). It builds from [aws-swf](https://github.com/neyric/aws-swf) module to implement application components.
-
-### Demo Workflow
-Follows the illustrated flight booking workflow below
-![Workflow](./references/FlightBookingWorkflow.png)
-
-### SWF Architecture
-![SWF](./references/SWFArchitecture.png)
-
 ### Requirements
  * [node.js](http://nodejs.org/) >= 0.8
  * An active [AWS account](http://aws.amazon.com/) with [Access Keys](http://docs.amazonwebservices.com/AWSSecurityCredentials/1.0/AboutAWSCredentials.html#AccessKeys)
 
 ### Installation
-(1) Clone repository
-```
-git clone git@github.com:ericapadilla/aws-swf-demo.git
-```
-(2) Install dependencies
+
+(1) Install dependencies
 ```
 npm install
 ```
-(3) Copy the sample configuration and replace with your own access keys
+(2) Copy the sample configuration and replace with your own access keys
 ```
 cp config.js.sample config.js
-vim config.js
+nano config.js
 ```
-(4) Register the domain, workflow type and activity types
+(3) Register the domain, workflow type and activity types
 ```
 npm run bootstrap
 ```
-(5) Run the decider
+(4) Run the decider
 ```
 npm run decider
 ```
-(6) Run the activities
+(5) Run the activity
 ```
-npm run verifyFlightDetails
+npm run uploadCSVS3
 ```
-```
-npm run processPayment
-```
-```
-npm run emailBookingConfirmation
+
 ```
 (7) Start workflow execution
 ```
