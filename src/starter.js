@@ -1,14 +1,14 @@
 var swf = require('../index').awsSwf;
 
 var workflow = new swf.Workflow({
-    domain: 'v-air',
+    domain: 'upload-file-S3-v2',
     workflowType: {
-        name: 'flight-booking',
-        version: '0.1'
+        name: 'upload-CSV-file-to-S3',
+        version: '0.2'
     },
     executionStartToCloseTimeout: '1800',
     taskStartToCloseTimeout: '1800',
-    taskList: { name: 'flight-booking-decision-task-list' },
+    taskList: { name: 'upload-file-S3-decision-task-list' },
     childPolicy: 'TERMINATE'
 });
 

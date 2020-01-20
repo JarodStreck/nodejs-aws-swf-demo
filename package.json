@@ -3,19 +3,21 @@
   "version": "0.0.1",
   "dependencies": {
     "async": "^1.5.2",
-    "aws-swf": "^4.1.0"
+    "aws-sdk": "^2.606.0",
+    "aws-swf": "^4.1.0",
+    "fs": "0.0.1-security"
   },
   "description": "Amazon Simple Workflow Service Demo Application in Node.js",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bootstrap": "node lib/bootstrap",
-    "verifyFlightDetails": "node lib/activities/verifyFlightDetails",
-    "processPayment": "node lib/activities/processPayment",
-    "emailBookingConfirmation": "node lib/activities/emailBookingConfirmation",
-    "decider": "node lib/decider",
-    "starter": "node lib/starter"
+    "bootstrap": "node src/bootstrap",
+    "uploadCSVS3": "node src/activities/uploadCSVS3",
+    "processPayment": "node src/activities/processPayment",
+    "emailBookingConfirmation": "node src/activities/emailBookingConfirmation",
+    "decider": "node src/decider",
+    "starter": "node src/starter"
   },
   "repository": {
     "type": "git",
