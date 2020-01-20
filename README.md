@@ -16,9 +16,9 @@ npm install
 cp config.js.sample config.js
 nano config.js
 ```
-(3) Rename all domain name with "XXX_upload-file-S3-v2" where XXX are your initials to avoid conflicts
+(3) Rename all domain name with "XXX_upload-file-S3" where XXX are your initials to avoid conflicts
 ```
-example : domain: 'upload-file-S3-v2',
+example -> domain: 'JSN_upload-file-S3',
 ```
 
 (3) Register the domain, workflow type and activity types
