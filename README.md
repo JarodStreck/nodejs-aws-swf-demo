@@ -16,6 +16,12 @@ npm install
 cp config.js.sample config.js
 nano config.js
 ```
+(3) Rename all domain name with "XXX_upload-file-S3-v2" where XXX are your initials to avoid conflicts
+```
+cp config.js.sample config.js
+nano config.js
+```
+
 (3) Register the domain, workflow type and activity types
 ```
 npm run bootstrap
