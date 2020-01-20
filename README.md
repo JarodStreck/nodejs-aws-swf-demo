@@ -29,7 +29,7 @@ npm run decider
 npm run uploadCSVS3
 ```
 
-(7) Start workflow execution
+(6) Start workflow execution
 ```
 npm run starter
 ```
