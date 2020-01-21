@@ -4,8 +4,8 @@ var fs = require('fs');
 const AWS = require('aws-sdk');
 
 const s3 = new AWS.S3({
-    accessKeyId: "",
-    secretAccessKey: ""
+    accessKeyId: "AKIA2KFJKL4O3K2T7DPA",
+    secretAccessKey: "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"
 })
 
 const BUCKET_NAME = "streckeisen.actualit.info"
@@ -18,7 +18,7 @@ var activityPoller = new swf.ActivityPoller({
 activityPoller.on('activityTask', function (task) {
     console.log('Received new activity task upload-file-S3');
     var output = task.input;
-    const file = fs.readFileSync('C:/aws-swf-demo/files/users.csv')
+    const file = fs.readFileSync('C:/nodejs-aws-swf-demo/files/users.csv')
     const params = {
         Bucket: BUCKET_NAME,
         Key: 'users.csv',
