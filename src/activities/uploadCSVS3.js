@@ -4,8 +4,8 @@ var fs = require('fs');
 const AWS = require('aws-sdk');
 
 const s3 = new AWS.S3({
-    accessKeyId: "AKIA2KFJKL4O3K2T7DPA",
-    secretAccessKey: "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"
+    accessKeyId: "",
+    secretAccessKey: ""
 })
 
 const BUCKET_NAME = "streckeisen.actualit.info"
