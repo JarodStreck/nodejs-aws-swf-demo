@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "async": "^1.5.2",
-    "aws-sdk": "^2.606.0",
+    "aws-sdk": "^2.814.0",
     "aws-swf": "^4.1.0",
     "fs": "0.0.1-security"
   },
